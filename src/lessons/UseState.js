@@ -5,12 +5,13 @@ export default function UseStateExample() {
   // 1) keep track of a count
   // 2) Increment the count on the click of the 'Increment' button
   // 3) Reset the count when you click the 'Reset' button
-  const [count, setCount] = useState(0)
+  // replace this!
+  const count = 0
   return (
     <div>
       <p>Current count: {count}</p>
-      <button onClick={() => setCount(count => count + 1)}>Increment</button>
-      <button onClick={() => setCount(0)}>Reset</button>
+      <button>Increment</button>
+      <button>Reset</button>
     </div>
   );
 }

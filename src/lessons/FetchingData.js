@@ -21,15 +21,10 @@ export default function FetchingDataExample() {
 function Page({ page }) {
   // TODO: Lets track two things: the pageData for the current page after we fetched it 
   // and a fetching state so we can update our UI while we're fetching new data.
-  const [pageData, setPageData] = useState()
-  const [fetching, setFetching] = useState(false)
-  useEffect(() => {
-    setFetching(true)
-    fetchData(page).then(data => {
-      setPageData(data)
-      setFetching(false)
-    })
-  }, [page])
+
+  // Replace these!
+  const pageData = null
+  const fetching = false
 
   const pageUI = pageData
   ? <PageUI {...pageData} /> : null

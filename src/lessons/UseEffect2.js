@@ -17,7 +17,7 @@ export default function UseStateExample() {
     return () => {
       document.title = "React App";
     };
-  }, [count]);
+  });
 
   return (
     <div style={{border: `5px solid ${color}`, width: "50%", margin: "auto", padding: "20px"}}>
