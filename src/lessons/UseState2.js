@@ -1,7 +1,10 @@
 import React, { useState } from 'react'
 
 export default function UseStateExample() {
-  const [count, setCount] = useState(0)
+  // TODO: Let's step it up by adding even more state!
+  // First, let's wire up this counter, just like before.
+  // Then, let's also set the component to update the border color on the click of the corresponding buttons!
+  const [count, setCount] = useState(0);
   const [color, setColor] = useState('red')
   return (
     <div style={{border: `5px solid ${color}`, width: "50%", margin: "auto", padding: "20px"}}>

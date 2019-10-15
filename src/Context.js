@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 export const ContrivedContext = React.createContext()
 
 export function Provider({ children }) {
-  const [foos, setFoos] = useState([])
+  const [foos, setFoos] = useState(['Initial foo'])
 
   const addFoo = foo => {
     setFoos([...foos, foo])
